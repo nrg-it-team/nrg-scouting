@@ -1,0 +1,43 @@
+{
+  "heading": "Please fill out this form for each individual event you attended.",
+  "logo": "nrglogo_smaller.png",
+  "skipTeamSelection": true,
+  "pages": [
+    {
+      "name": "Outreach",
+      "widgets": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+
+        {
+          "name": "Event Attended",
+          "type": "text"
+        },
+        {
+          "name": "Hours Attended",
+          "type": "number"
+        },
+        {
+          "type": "picture",
+          "file": "outreach_explanation.png",
+          "height": 300,
+          "col": 2
+        },
+        {
+          "name": "People Reached",
+          "type": "number"
+        },
+        {
+          "name": "People Impacted",
+          "type": "number"
+        },
+        {
+          "name": "Other Comments",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
