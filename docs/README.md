@@ -1,4 +1,5 @@
-# Black Hawks Scouting
+# NRG Scouting
+## The NRG Scouting app is built off of FRC Team 2834's Blackhawks Scouting App.
 
 ## Overview
 
