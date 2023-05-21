@@ -1,5 +1,5 @@
 {
-  "heading": "Charged Up - 2023 (Pit Scouting)",
+  "heading": "Pit Scouting - Charged Up 2023",
   "logo": "nrglogo_smaller.png",
   "skipTeamSelection": true,
   "pages": [
@@ -11,11 +11,11 @@
           "type": "number"
         },
         {
-          "name": "Drive Coach",
+          "name": "Scouter Name",
           "type": "text"
         },
         {
-          "name": "Driver Names",
+          "name": "Name of Person Interviewed",
           "type": "text"
         }
       ]
@@ -24,82 +24,64 @@
       "name": "Robot",
       "widgets": [
         {
-          "name": "Height",
-          "type": "number"
+          "name":"Length x Width, Height (in)",
+          "type": "text"
         },
         {
-          "name": "Length",
-          "type": "number"
-        },
-        {
-          "name": "Width",
-          "type": "number"
-        },
-        {
-          "name": "Wheel-Bumper Distance",
-          "type": "number"
-        },
-        {
-          "name": "Weight",
+          "name": "Weight (lbs)",
           "type": "number"
         },
         {
           "name": "Drivetrain",
-          "type": "dropdown",
-          "options": [
-            "West Coast",
-            "Swerve",
-            "Butterfly",
-            "Mecanum",
-            "Other"
-          ]
+          "type": "text"
         },
         {
-          "name": "Swerve Motor Type",
-          "type": "dropdown",
-          "options": [
-            "Neo",
-            "Falcon",
-            "Cim"
-          ]
-        },
-        {
-          "name": "Swerve Type",
-          "type": "dropdown",
-          "options": [
-            "No swerve",
-            "L1",
-            "L2",
-            "L3",
-            "L4",
-            "Neo",
-            "Falcon",
-            "Custom"
-          ]
-        },
-        {
-          "name": "Has Driver Camera",
+          "name": "Has Vision Capabilities",
           "type": "checkbox"
+        },
+        {
+          "name": "Describe Vision Capabilities (if applicable):",
+          "type" :"text"
+        },
+        {
+          "name": "Robot Mechanisms (Describe the best you can)",
+          "type":"textarea"
         }
       ]
     },
     {
-      "name": "Match Play",
+      "name": "Auto",
       "widgets": [
         {
-          "name": "Cycle Time",
-          "type": "number"
-        },
-        {
-          "name": "Can Pick Up",
+          "name": "Auto Capabilities",
           "type": "multicheckbox",
           "options": [
-            "Ground Upright Cones",
-            "Ground Tipped Cones",
-            "Ground Cubes",
-            "Sub 1 (Direct)",
-            "Sub 2 High"
+            "Leave Community",
+            "Auto Balance"
           ]
+        },
+        {
+          "name":"Pieces Scored Consistently In Auto",
+          "type":"number"
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "name":"Piece Preference",
+          "type":"dropdown",
+          "options": [
+            "Cones",
+            "Cubes",
+            "No Preference"
+          ],
+          "defaultOption": true
+        },
+        {
+          "name": "Cycle Time (Time Between Scoring)",
+          "type": "number"
         },
         {
           "name": "Can Score In",
@@ -111,11 +93,12 @@
           ]
         },
         {
-          "name": "Scoring Methods",
+          "name": "Can Pick Up",
           "type": "multicheckbox",
           "options": [
-            "Manual",
-            "Auto"
+            "Ground",
+            "Single Substation",
+            "Double Substation (Shelf)"
           ]
         },
         {
@@ -123,16 +106,28 @@
           "type": "dropdown",
           "options": [
             "Ground",
-            "Sub 1",
-            "Sub 2 Low",
-            "Sub 2 High"
+            "Single Substation",
+            "Double Substation"
           ],
           "defaultOption": true
+        }
+
+      ]
+    },
+    {
+      "name": "Misc",
+      "widgets": [
+        {
+          "name": "Drive Team Experience",
+          "type":"textarea"
         },
         {
-          "name": "Comments",
-          "type": "textarea",
-          "colspan": 3
+          "name": "Other Comments From the Team",
+          "type":"textarea"
+        },
+        {
+          "name": "Personal Comments/Concerns",
+          "type":"textarea"
         }
       ]
     }

@@ -10,10 +10,11 @@
   <h2>Tools</h2>
   <ul class="link-list">
     <li>
-      <RouterLink :to="{ name: 'inspector' }">Data Inspector (Allows you to look at collected data)</RouterLink>
+      <RouterLink :to="{ name: 'inspector' }">See Saved Data</RouterLink>
     </li>
   </ul>
-  <p style="margin-top: 50px">Version: {{ version }}</p>
+  <p style="margin-top: 50px">Version: 2023.5</p>
+  <p>Made with ❤️ by the NRG IT Team.</p>
 </template>
 
 <script setup lang="ts">

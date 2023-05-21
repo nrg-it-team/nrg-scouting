@@ -1,17 +1,17 @@
 <template>
   <FormPage title="Download Data" ref="page">
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
-      <button @click="clearForm">Save Data (Make sure to click this before downloading the CSV)</button>
+      <button @click="clearForm">SAVE MATCH/EVENT</button>
     </FormGroup>
     <FormGroup :label-type="LabelType.None">
       <div style="height: 20px;"></div>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
       <span v-if="widgets.downloadLink === null">No Saved Data</span>
-      <a v-else :download="`scouted-${config.name}.csv`" :href="widgets.downloadLink">Download Saved CSV (Click when you are completely finished, and send this file to the strategy/outreach captain.)</a>
+      <a v-else :download="`scouted-${config.name}.csv`" :href="widgets.downloadLink">DOWNLOAD ALL DATA</a>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
-      <RouterLink :to="{ name: 'inspector' }">Data Inspector</RouterLink>
+      <RouterLink :to="{ name: 'inspector' }">See Saved Data</RouterLink>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
       <RouterLink :to="{ name: 'home' }">Home</RouterLink>
