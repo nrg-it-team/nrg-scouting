@@ -7,11 +7,7 @@
       "widgets": [
         {
           "name": "Scouter Name",
-          "type": "text",
-          "validation": {
-            "comparison": "greater",
-            "value": 0
-          }
+          "type": "text"
         },
         {
           "name": "Starting Position",

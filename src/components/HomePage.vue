@@ -13,8 +13,9 @@
       <RouterLink :to="{ name: 'inspector' }">See Saved Data</RouterLink>
     </li>
   </ul>
-  <p style="margin-top: 50px">Version: 2023.5</p>
-  <p>Made with ❤️ by the NRG IT Team.</p>
+  <p style="margin-top: 50px">Need help? Check out the <a href="https://youtu.be/UmP2YxNzfv4" target="_blank" rel="noreferrer noopener">tutorial</a>.</p>
+  <p style="margin-top: 20px">Version: 2023.5</p>
+  <p style="margin-top: 1px">Made with ❤️ by the NRG IT Team.</p>
 </template>
 
 <script setup lang="ts">
