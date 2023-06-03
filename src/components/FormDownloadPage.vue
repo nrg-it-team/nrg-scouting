@@ -1,17 +1,29 @@
 <template>
-  <FormPage title="Download Data" ref="page">
+  <FormPage title="Save" ref="page">
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
-      <button @click="clearForm">SAVE MATCH/EVENT</button>
+      <button @click="clearForm">1: Save This Match or Event</button>
     </FormGroup>
-    <FormGroup :label-type="LabelType.None">
-      <div style="height: 20px;"></div>
+    <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
+    <h2>Download Files</h2>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
       <span v-if="widgets.downloadLink === null">No Saved Data</span>
-      <a v-else :download="`scouted-${config.name}.csv`" :href="widgets.downloadLink">DOWNLOAD ALL DATA</a>
+      <a v-else :download="`scouted-${config.name}.csv`" :href="widgets.downloadLink"><h3>2: Download All Data</h3></a>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
-      <RouterLink :to="{ name: 'inspector' }">See Saved Data</RouterLink>
+      <RouterLink :to="{ name: 'inspector' }">(View Data)</RouterLink>
+    </FormGroup>
+    <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
+      <h2>Upload Files</h2>
+    </FormGroup>
+    <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
+      <a href="https://drive.google.com/drive/folders/1NtR30lREQ7iG0MDv68IyeY8xpLwR8bAr?usp=sharing" target="_blank" rel="noreferrer noopener">3a) Matches</a>
+    </FormGroup>
+    <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
+      <a href="https://drive.google.com/drive/folders/1v3QXy6MBwSYVFjoAW8mT6sXGdrq67-1z?usp=sharing" target="_blank" rel="noreferrer noopener">3b) Pits</a>
+    </FormGroup>
+    <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
+      <a href="https://drive.google.com/drive/folders/1HPsNYshzWU4ui0JbbwP4etr38vCQrwNm?usp=sharing" target="_blank" rel="noreferrer noopener">3c) Outreach</a>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
       <RouterLink :to="{ name: 'home' }">Home</RouterLink>
