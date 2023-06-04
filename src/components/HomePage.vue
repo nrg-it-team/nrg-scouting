@@ -1,5 +1,5 @@
 <template>
-  <h1>Welcome to NRG's scouting page!</h1>
+  <h1>Welcome to NRG Scouting!</h1>
   <h2>Please Select a Form:</h2>
   <ul v-if="list.length > 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
