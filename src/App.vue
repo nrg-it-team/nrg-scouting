@@ -41,6 +41,7 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("https://i.ibb.co/7rVyvgs/nrg-wallpaper-1080-v2.png");
+  background-color: #292929;
   margin: 0;
 }
 
