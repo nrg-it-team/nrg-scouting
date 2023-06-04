@@ -21,7 +21,8 @@
       "widgets": [
         {
           "name": "Left Community",
-          "type": "checkbox"
+          "type": "checkbox",
+          "col": 2
         },
         {
           "type": "spacer",
