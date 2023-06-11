@@ -1,6 +1,7 @@
 <template>
   <div v-show="show">
-    <h1 class="page-heading">{{ config.data.heading ?? "Scouting" }}</h1>
+    <h1 class="page-heading" v-if="config.data.heading != `Outreach`"><span style="color:#CC0000">⚡ {{ config.data.heading ?? "Scouting" }}</span><span style="color: #fac21b;"> Scouting ⚡</span></h1>
+    <h1 class="page-heading" v-else:><span style="color: #CC0000">⚡ Out</span><span style="color: #fac21b;">reach ⚡</span></h1>
     <h3 v-if="teamDesc?.length > 0" class="page-heading">Team: {{ teamDesc }}</h3>
     <img v-if="config.data.logo" :src="absoluteLogoPath" alt="Cannot load logo file" class="center" />
     <h2 class="page-heading">{{ title }}</h2>

@@ -1,5 +1,5 @@
 {
-  "heading": "Match Scouting - Charged Up 2023",
+  "heading": "Match",
   "logo": "nrglogo_smaller.png",
   "pages": [
     {
@@ -90,7 +90,7 @@
       "name": "Teleop",
       "widgets": [
         {
-          "name": "Picked Up From",
+          "name": "Picked Up From (Refer to the tutorial)",
           "type": "heading",
           "colspan": 5,
           "align": "center"

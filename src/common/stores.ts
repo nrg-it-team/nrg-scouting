@@ -44,6 +44,21 @@ export const useWidgetsStore = defineStore("widgets", () => {
     const data = savedData.get(config.name);
     return (data === undefined) ? null : makeDownloadLink(data);
   });
+  // Hard-coded downloadLink
+  const matchesDownloadLink = $computed(() => {
+    const data = savedData.get("Matches");
+    return (data === undefined) ? null : makeDownloadLink(data);
+  });
+  // Hard-coded downloadLink
+  const outreachDownloadLink = $computed(() => {
+    const data = savedData.get("Outreach");
+    return (data === undefined) ? null : makeDownloadLink(data);
+  });
+  // Hard-coded downloadLink
+  const pitsDownloadLink = $computed(() => {
+    const data = savedData.get("Pits");
+    return (data === undefined) ? null : makeDownloadLink(data);
+  });
 
   // Creates a download link for a given data object.
   function makeDownloadLink(data: SavedData): string {
@@ -97,7 +112,7 @@ export const useWidgetsStore = defineStore("widgets", () => {
     }
   }
 
-  return $$({ values, savedData, lastWidgetRowEnd, downloadLink, makeDownloadLink, addWidgetValue, save });
+  return $$({ values, savedData, lastWidgetRowEnd, matchesDownloadLink, outreachDownloadLink, pitsDownloadLink, downloadLink, makeDownloadLink, addWidgetValue, save });
 });
 
 // Store to contain widget validation status flags
