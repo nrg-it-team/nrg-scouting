@@ -4,7 +4,7 @@
       <button @click="clearForm" style="font-size: 2em;">Save</button>
     </FormGroup>
     <FormGroup :label-type="LabelType.None" :colspan="2" align="center">
-      <p style="font-size: 1.3em;"><RouterLink :to="{ name: 'home' }">🏠 Home</RouterLink></p>
+      <p style="font-size: 1.3em;"><RouterLink style="text-decoration: none;" :to="{ name: 'home' }">🏠 Home</RouterLink></p>
     </FormGroup>
   </FormPage>
 </template>

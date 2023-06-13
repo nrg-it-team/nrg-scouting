@@ -1,6 +1,6 @@
 <template>
   <div id="controls-container">
-    <RouterLink :to="{ name: 'home' }">🏠 Home</RouterLink>
+    <RouterLink style="text-decoration: none;" :to="{ name: 'home' }">🏠 Home</RouterLink>
     <span v-if="widgets.savedData.size === 0">&lt;No Entries&gt;</span>
     <template v-else>
       <label for="entry-select">Entry</label>

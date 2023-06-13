@@ -14,7 +14,7 @@
       <a href="https://drive.google.com/drive/folders/1v3QXy6MBwSYVFjoAW8mT6sXGdrq67-1z?usp=sharing" target="_blank" rel="noreferrer noopener">Pits</a> |
       <a href="https://drive.google.com/drive/folders/1HPsNYshzWU4ui0JbbwP4etr38vCQrwNm?usp=sharing" target="_blank" rel="noreferrer noopener">Outreach</a>
     </p>
-  <p style="margin-top: 50px; font-size: 1.3em;"><RouterLink :to="{ name: 'home' }">🏠 Home</RouterLink></p>
+  <p style="margin-top: 50px; font-size: 1.3em;"><RouterLink style="text-decoration: none;" :to="{ name: 'home' }">🏠 Home</RouterLink></p>
   <p style="margin-top: 10px">Need help? Check out the <a href="https://youtu.be/UmP2YxNzfv4" target="_blank" rel="noreferrer noopener">tutorial</a>.</p>
   <p style="margin-top: 10px">Made with ❤️ by the NRG IT Team.</p>
 </template>
