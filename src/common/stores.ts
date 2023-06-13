@@ -47,8 +47,10 @@ export const useWidgetsStore = defineStore("widgets", () => {
   // Hard-coded downloadLink
   const matchesDownloadLink = $computed(() => {
     const data = savedData.get("Matches");
-    return (data === undefined) ? null : makeDownloadLink(data);
+    const temp = (data === undefined) ? null : makeDownloadLink(data);
+    return temp;
   });
+
   // Hard-coded downloadLink
   const outreachDownloadLink = $computed(() => {
     const data = savedData.get("Outreach");
