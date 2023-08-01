@@ -2,7 +2,7 @@
 
 ## Overview
 
-Black Hawks Scouting's layout system is based on the CSS Grid layout model, allowing for powerful and complex widget positioning.
+NRG Scouting's layout system is based on the CSS Grid layout model, allowing for powerful and complex widget positioning.
 
 In the grid model, widgets can occupy different numbers of cells; they can also be located in different cells. These are controlled by the following fields in a widget's [object](config.md#widget-objects); they are all of type `number`:
 

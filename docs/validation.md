@@ -2,7 +2,7 @@
 
 ## Overview
 
-Black Hawks Scouting supports widget value validation. Not only does this allow you to make certain widgets required, but more advanced checks can also be used, such as "Is the number entered between 10 and 20?" and "Are at least 5 positions selected in the image?".
+NRG Scouting supports widget value validation. Not only does this allow you to make certain widgets required, but more advanced checks can also be used, such as "Is the number entered between 10 and 20?" and "Are at least 5 positions selected in the image?".
 
 If a widget fails validation, it will be highlighted with a red border and you will be unable to go to the next form page until the widget passes.
 

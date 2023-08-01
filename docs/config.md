@@ -4,7 +4,7 @@ Prerequisite knowledge: An understanding of JSON files and syntax.
 
 ## Overview
 
-Black Hawks Scouting has the capability to load multiple scouting configurations. This can have different use cases, such as match/pit scouting and different setups for various seasons.
+NRG Scouting has the capability to load multiple scouting configurations. This can have different use cases, such as match/pit scouting and different setups for various seasons.
 
 Each configuration contains the pages, widgets, and layout of the scouting form. They are stored as JSON files in [`assets`](/public/assets) under the `public` directory; one form corresponds to one configuration (and thus one file).
 
@@ -12,7 +12,7 @@ Each configuration has a file name in the format `config-`, followed by the name
 
 ## Configuration List
 
-To make a configuration appear in Black Hawks Scouting's home page, it must be included in the configuration list at `/public/assets/configurations.txt`.
+To make a configuration appear in NRG Scouting's home page, it must be included in the configuration list at `/public/assets/configurations.txt`.
 
 This file is a list of configuration names you want linked on the home page, separated by newlines. Leading/trailing whitespace and blank lines in the file are ignored.
 
@@ -29,7 +29,7 @@ Notice how the `config-` and `.json` components of each file name are not includ
 
 ## Handling Updates
 
-When you update your copy of Black Hawks Scouting, GitHub will pull changes in the stock forms (`config-matches.json` and `config-pits.json`) into your fork. If you have your own changes in these files and don't want this to happen, you may do one of the following:
+When you update your copy of NRG Scouting, GitHub will pull changes in the stock forms (`config-matches.json` and `config-pits.json`) into your fork. If you have your own changes in these files and don't want this to happen, you may do one of the following:
 
 - Save a copy of these files before updating, then restore them after updating
 - Define your configurations in new files (without modifying the stock configurations), and remove the stock forms from `configurations.txt` if desired
@@ -372,6 +372,6 @@ How to compare a widget's value with the specified value(s) to determine if it p
 
 The value(s) to validate the widget against.
 
-If range validation is specified, this field should be an array of two numbers specifying the range to validate against. The two numbers may be in any order. While more numbers are valid in the array, Black Hawks Scouting will only use the greatest and least values. This range is inclusive for `inRange` and exclusive for `outOfRange`.
+If range validation is specified, this field should be an array of two numbers specifying the range to validate against. The two numbers may be in any order. While more numbers are valid in the array, NRG Scouting will only use the greatest and least values. This range is inclusive for `inRange` and exclusive for `outOfRange`.
 
 Otherwise, this field is a single number specifying the value to validate against.

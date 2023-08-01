@@ -2,7 +2,7 @@
 
 ## Overview
 
-Black Hawks Scouting provides numerous widgets as well as a [layout system](grid.md), allowing you to create flexible and intuitive user interfaces for your scouting forms. View the [example configuration](https://frc2834.github.io/blackhawks-scouting/#/form?name=example) to see each widget as they appear in the app.
+NRG Scouting provides numerous widgets as well as a [layout system](grid.md), allowing you to create flexible and intuitive user interfaces for your scouting forms. View the [example configuration](https://frc2834.github.io/blackhawks-scouting/#/form?name=example) to see each widget as they appear in the app.
 
 A widget's type, size, and position are specified in its [JSON object](config.md#widget-objects).
 
