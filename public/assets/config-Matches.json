@@ -90,7 +90,7 @@
       "name": "Teleop",
       "widgets": [
         {
-          "name": "Picked Up From (Refer to the tutorial)",
+          "name": "Picked Up From",
           "type": "heading",
           "colspan": 5,
           "align": "center"
