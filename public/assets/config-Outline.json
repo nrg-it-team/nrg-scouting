@@ -1,0 +1,16 @@
+{
+  "heading": "Basic Outline",
+  "skipTeamSelection": true,
+  "pages" : [
+  {
+    "name" : "Example Page",
+    "widgets": [
+      {
+      "name" : "Sample text",
+      "type" : "text"
+      }
+    ]
+
+  }
+]
+}
