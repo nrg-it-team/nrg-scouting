@@ -15,7 +15,11 @@
           "type": "text"
         },
         {
-          "name": "Name of Person Interviewed",
+          "name": "Interviewer Name (You)",
+          "type": "text"
+        },
+        {
+          "name": "Interviewee Name (Them)",
           "type": "text"
         }
       ]
