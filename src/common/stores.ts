@@ -5,7 +5,6 @@ import { isFailed, TBAData } from "./tba";
 import { Ref } from "vue";
 import { useStorage } from "@vueuse/core";
 import validate from "./validate";
-
 interface WidgetValue {
   readonly name: string;
   readonly value: Ref;
