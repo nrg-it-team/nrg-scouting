@@ -1,13 +1,13 @@
 # NRG Scouting
-## The NRG Scouting app is built off of FRC Team 2834's Blackhawks Scouting App.
+## [Link to website](https://nrg-it-team.github.io/nrg-scouting)
 
 ## Overview
 
-Black Hawks Scouting is an advanced, web-based, and open source scouting app made by FRC Team 2834 (The Bionic Black Hawks).
+NRG Scouting is an advanced, web-based, and open source scouting app made by FRC Team 948 (Newport Robotics Group). It was originally created by FRC team 2834, the Bionic Blackhawks.
 
 Powered by [Vue.js](https://vuejs.org) and [The Blue Alliance](https://thebluealliance.com).
 
-[Live Demo](https://frc2834.github.io/blackhawks-scouting/#/) | [Introductory Videos](https://www.youtube.com/playlist?list=PLBRtye3iMZkFWZWo_e2GbrHIJkexl5A20) (More coming soon)
+[Introductory Videos](https://www.youtube.com/playlist?list=PLBRtye3iMZkFWZWo_e2GbrHIJkexl5A20) (More coming soon)
 
 ## Features
 
