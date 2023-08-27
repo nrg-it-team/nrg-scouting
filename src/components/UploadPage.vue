@@ -5,14 +5,12 @@
   <span @click="noDataAlert()" v-if="widgets.matchesDownloadLink === null">Matches</span>
   <a v-else :download="`matches-` + currenttime + `.csv`" :href="widgets.matchesDownloadLink"><button @click="clearMatchesData()">Matches</button></a> |
   <span @click="noDataAlert()" v-if="widgets.pitsDownloadLink === null">Pits</span>
-  <a v-else :download="`pits-` + currenttime + `.csv`" :href="widgets.pitsDownloadLink"><button @click="clearPitsData()">Pits</button></a> |
-  <span @click="noDataAlert()" v-if="widgets.outreachDownloadLink === null">Outreach</span>
-  <a v-else :download="`outreach-` + currenttime + `.csv`" :href="widgets.outreachDownloadLink"><button @click="clearOutreachData()">Outreach</button></a></p>
+  <a v-else :download="`pits-` + currenttime + `.csv`" :href="widgets.pitsDownloadLink"><button @click="clearPitsData()">Pits</button></a>
+  </p>
   <h2 style="margin-top: 20px">2) Add to Drive</h2>
     <p style="font-size: 1.4em;">
       <a href="https://drive.google.com/drive/folders/1NtR30lREQ7iG0MDv68IyeY8xpLwR8bAr?usp=sharing" target="_blank" rel="noreferrer noopener">Matches</a> |
-      <a href="https://drive.google.com/drive/folders/1v3QXy6MBwSYVFjoAW8mT6sXGdrq67-1z?usp=sharing" target="_blank" rel="noreferrer noopener">Pits</a> |
-      <a href="https://drive.google.com/drive/folders/1HPsNYshzWU4ui0JbbwP4etr38vCQrwNm?usp=sharing" target="_blank" rel="noreferrer noopener">Outreach</a>
+      <a href="https://drive.google.com/drive/folders/1v3QXy6MBwSYVFjoAW8mT6sXGdrq67-1z?usp=sharing" target="_blank" rel="noreferrer noopener">Pits</a>
     </p>
   <p style="margin-top: 50px; font-size: 1.3em;"><RouterLink style="text-decoration: none;" :to="{ name: 'home' }">🏠 Home</RouterLink></p>
   <p style="margin-top: 10px">Made with ❤️ by the NRG IT Team.</p>
