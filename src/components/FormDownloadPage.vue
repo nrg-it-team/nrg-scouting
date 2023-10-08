@@ -27,6 +27,7 @@ defineExpose({ title: computed(() => page?.title), setShown: computed(() => page
 
 function clearForm() {
   widgets.save();
+  alert("Successfully saved data")
   router.go(0); // Reload the page
 }
 </script>
