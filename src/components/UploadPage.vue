@@ -1,5 +1,5 @@
 <template>
-  <h1><span style="color: #CC0000">⚡ Upload</span><span style="color: #fac21b;"> Data ⚡</span></h1>
+  <h1><span style="color: #CC0000">⚡ Download</span><span style="color: #fac21b;"> Data ⚡</span></h1>
   <h2>1) Download</h2>
   <p style="font-size:1.4em">
   <span @click="noDataAlert()" v-if="widgets.matchesDownloadLink === null">Matches</span>

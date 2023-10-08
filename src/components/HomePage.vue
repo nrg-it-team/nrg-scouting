@@ -7,10 +7,10 @@
     </li>
   </ul>
   <p v-else>No configurations specified.</p>
-  <h2 style="margin-top: 20px">Upload</h2>
+  <h2 style="margin-top: 20px">Download</h2>
   <ul class="link-list">
     <li>
-      <RouterLink :to="{ name: 'upload' }">Upload</RouterLink>
+      <RouterLink :to="{ name: 'upload' }">Download</RouterLink>
     </li>
     <li>
       <RouterLink :to="{ name: 'inspector' }">Saved Data</RouterLink>
