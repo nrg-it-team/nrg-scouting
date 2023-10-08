@@ -11,10 +11,6 @@
           "type": "number"
         },
         {
-          "name": "Scouter Name",
-          "type": "text"
-        },
-        {
           "name": "Interviewer Name (You)",
           "type": "text"
         },
