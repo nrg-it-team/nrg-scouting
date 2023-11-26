@@ -1,15 +1,15 @@
 <template>
-  <div id="upload-container">
-        <UploadPage />
+  <div id="download-container">
+        <DownloadPage />
         </div>
 </template>
 
 <script setup lang="ts">
-import UploadPage from "@/components/UploadPage.vue";
+import DownloadPage from "@/components/DownloadPage.vue";
 </script>
 
 <style>
-#upload-container {
+#download-container {
   display: grid;
   justify-content: center;
 }

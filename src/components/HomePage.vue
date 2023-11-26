@@ -10,7 +10,7 @@
   <h2 style="margin-top: 20px">Download</h2>
   <ul class="link-list">
     <li>
-      <RouterLink :to="{ name: 'upload' }">Download</RouterLink>
+      <RouterLink :to="{ name: 'download' }">Download</RouterLink>
     </li>
     <li>
       <RouterLink :to="{ name: 'inspector' }">Saved Data</RouterLink>
@@ -18,6 +18,7 @@
   </ul>
   <!--<p style="margin-top: 50px">Need help? Check out the <a href="https://youtu.be/UmP2YxNzfv4" target="_blank" rel="noreferrer noopener">tutorial</a>.</p>-->
   <p style="margin-top: 20px">Made with ❤️ by the NRG IT Team.</p>
+  <p>Version {{ version }}</p>
 </template>
 
 <script setup lang="ts">

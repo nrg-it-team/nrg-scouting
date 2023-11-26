@@ -41,28 +41,22 @@ export const useWidgetsStore = defineStore("widgets", () => {
   // Download link for the current configuration
   const downloadLink = $computed(() => {
     const data = savedData.get(config.name);
-    return (data === undefined) ? null : makeDownloadLink(data);
+    return (data === undefined) ? null : makeBlob(data);
   });
   // Hard-coded downloadLink
   const matchesDownloadLink = $computed(() => {
     const data = savedData.get("Matches");
-    const temp = (data === undefined) ? null : makeDownloadLink(data);
+    const temp = (data === undefined) ? null : URL.createObjectURL(makeBlob(data));
     return temp;
-  });
-
-  // Hard-coded downloadLink
-  const outreachDownloadLink = $computed(() => {
-    const data = savedData.get("Outreach");
-    return (data === undefined) ? null : makeDownloadLink(data);
   });
   // Hard-coded downloadLink
   const pitsDownloadLink = $computed(() => {
     const data = savedData.get("Pits");
-    return (data === undefined) ? null : makeDownloadLink(data);
+    return (data === undefined) ? null : URL.createObjectURL(makeBlob(data));
   });
 
   // Creates a download link for a given data object.
-  function makeDownloadLink(data: SavedData): string {
+  function makeBlob(data: SavedData): Blob {
     // Transforms an array of strings into valid CSV by escaping quotes, then joining each value.
     // https://en.wikipedia.org/wiki/Comma-separated_values
     const escape = (s: string[]) => s.map(i => `"${i.replaceAll('"', '""')}"`).join();
@@ -70,7 +64,7 @@ export const useWidgetsStore = defineStore("widgets", () => {
     // Escape the header and list of records, then put them together into a blob for downloading
     const header = escape(data.header);
     const records = data.values.map(escape);
-    return URL.createObjectURL(new Blob([[header, ...records].join("\n")], { type: "text/csv" }));
+    return new Blob([[header, ...records].join("\n")], { type: "text/csv" });
   }
 
   // Adds a widget and its reactive value to a temporary array.
@@ -113,7 +107,7 @@ export const useWidgetsStore = defineStore("widgets", () => {
     }
   }
 
-  return $$({ values, savedData, lastWidgetRowEnd, matchesDownloadLink, outreachDownloadLink, pitsDownloadLink, downloadLink, makeDownloadLink, addWidgetValue, save });
+  return $$({ values, savedData, lastWidgetRowEnd, matchesDownloadLink, pitsDownloadLink, downloadLink, makeBlob, addWidgetValue, save });
 });
 
 // Store to contain widget validation status flags
