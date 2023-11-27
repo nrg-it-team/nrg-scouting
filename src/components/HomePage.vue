@@ -18,7 +18,8 @@
   </ul>
   <!--<p style="margin-top: 50px">Need help? Check out the <a href="https://youtu.be/UmP2YxNzfv4" target="_blank" rel="noreferrer noopener">tutorial</a>.</p>-->
   <p style="margin-top: 20px">Made with ❤️ by the NRG IT Team.</p>
-  <p>Version {{ version }}</p>
+  <p>Version {{ version }} <button @click="clearLocalStorage()" class="sd-button">🚀</button></p>
+  <p>The Doofenschmirtz Update</p>
 </template>
 
 <script setup lang="ts">
@@ -34,6 +35,15 @@ if (!fetchResult.ok) throw new FetchError("Configuration list", fetchResult);
 // Get text data, then convert to array
 const textData = await fetchResult.text();
 const list = $ref(textData.split("\n").map(value => value.trim()).filter(value => value.length > 0));
+function clearLocalStorage() {
+  const response = prompt("Are you sure you want to clear all data? Type 'i am become death' to continue.")
+  if (response === null) {return}
+  if (response.toLowerCase() === "i am become death") {
+  localStorage.clear()
+  sessionStorage.clear()
+  alert("Local storage cleared.")
+  location.reload();}
+}
 </script>
 
 <style lang="postcss">
@@ -61,5 +71,8 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
 
+}
+.sd-button {
+  text-decoration: none;
 }
 </style>
