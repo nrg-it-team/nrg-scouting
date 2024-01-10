@@ -1,0 +1,135 @@
+{
+  "heading": "Pit",
+  "logo": "nrglogo_smaller.png",
+  "skipTeamSelection": true,
+  "pages": [
+    {
+      "name": "Team",
+      "widgets": [
+        {
+          "name": "Team Number",
+          "type": "number"
+        },
+        {
+          "name": "Interviewer Name (You)",
+          "type": "text"
+        },
+        {
+          "name": "Interviewee Name (Them)",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Robot",
+      "widgets": [
+        {
+          "name":"Length x Width, Height (in)",
+          "type": "text"
+        },
+        {
+          "name": "Weight (lbs)",
+          "type": "number"
+        },
+        {
+          "name": "Drivetrain",
+          "type": "text"
+        },
+        {
+          "name": "Has Vision Capabilities",
+          "type": "checkbox"
+        },
+        {
+          "name": "Describe Vision Capabilities (if applicable):",
+          "type" :"text"
+        },
+        {
+          "name": "Robot Mechanisms (Describe the best you can)",
+          "type":"textarea"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "widgets": [
+        {
+          "name": "Auto Capabilities",
+          "type": "multicheckbox",
+          "options": [
+            "Leave Community",
+            "Auto Balance"
+          ]
+        },
+        {
+          "name":"Pieces Scored Consistently In Auto",
+          "type":"number"
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "name":"Piece Preference",
+          "type":"dropdown",
+          "options": [
+            "Cones",
+            "Cubes",
+            "No Preference"
+          ],
+          "defaultOption": true
+        },
+        {
+          "name": "Cycle Time (Time Between Scoring)",
+          "type": "number"
+        },
+        {
+          "name": "Can Score In",
+          "type": "multicheckbox",
+          "options": [
+            "High",
+            "Medium",
+            "Low"
+          ]
+        },
+        {
+          "name": "Can Pick Up",
+          "type": "multicheckbox",
+          "options": [
+            "Ground",
+            "Single Substation",
+            "Double Substation (Shelf)"
+          ]
+        },
+        {
+          "name": "Preferred Pickup Location",
+          "type": "dropdown",
+          "options": [
+            "Ground",
+            "Single Substation",
+            "Double Substation"
+          ],
+          "defaultOption": true
+        }
+
+      ]
+    },
+    {
+      "name": "Misc",
+      "widgets": [
+        {
+          "name": "Drive Team Experience",
+          "type":"textarea"
+        },
+        {
+          "name": "Other Comments From the Team",
+          "type":"textarea"
+        },
+        {
+          "name": "Personal Comments/Concerns",
+          "type":"textarea"
+        }
+      ]
+    }
+  ]
+}

@@ -19,45 +19,70 @@
     {
       "name": "Autonomous",
       "widgets": [
-        
         {
-          "name": "Left Wing",
+          "name": "Left Community",
           "type": "checkbox",
-          "col": 1
+          "col": 2
         },
         {
           "type": "spacer",
           "height": 20
         },
         {
-          "name": "Speaker Notes",
+          "name": "Top Cubes",
           "type": "spinbox",
           "col": 1,
           "prefix": "Auto",
-          "buttonColor": "darkorange"
+          "buttonColor": "purple"
         },
         {
-          "name": "Amp Notes",
+          "name": "Mid Cubes",
           "type": "spinbox",
-          "col": 1,
+          "prefix": "Auto",
+          "buttonColor": "purple"
+        },
+        {
+          "name": "Low Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "buttonColor": "purple"
+        },
+        {
+          "name": "Top Cones",
+          "type": "spinbox",
+          "row": 3,
+          "col": 4,
           "prefix": "Auto",
           "buttonColor": "darkOrange"
         },
         {
-          "name": "Picked Up From (All Ground)",
-          "type": "heading",
-          "colspan": 5,
-          "align": "center"
+          "name": "Mid Cones",
+          "type": "spinbox",
+          "col": 4,
+          "prefix": "Auto",
+          "buttonColor": "darkOrange"
         },
         {
-          "name": "Wing",
-          "type": "spinbox"
-          },
-        {
-          "name": "Center",
+          "name": "Low Cones",
           "type": "spinbox",
-          "col" : 3,
-          "row": 6
+          "col": 4,
+          "prefix": "Auto",
+          "buttonColor": "darkOrange"
+        },
+        {
+          "type": "spacer",
+          "height": 20
+        },
+        {
+          "name": "Charging Station",
+          "prefix": "Auto",
+          "type": "dropdown",
+          "options": [
+            "Not Attempted",
+            "Engaged",
+            "Docked",
+            "Failed"
+          ]
         }
       ]
     },
@@ -73,12 +98,21 @@
         {
           "name": "Ground",
           "type": "spinbox"
-          },
+        },
         {
-          "name": "Source",
+          "name": "Sub 1",
+          "type": "spinbox"
+        },
+        {
+          "name": "Sub 2 Low",
           "type": "spinbox",
-          "col" : 3,
-          "row": 2
+          "row": 2,
+          "col": 3
+        },
+        {
+          "name": "Sub 2 High",
+          "type": "spinbox",
+          "col": 3
         },
         {
           "name": "Scoring",
@@ -87,21 +121,40 @@
           "align": "center"
         },
         {
-          "name": "Speaker Notes (Unamped)",
+          "name": "Top Cubes",
           "type": "spinbox",
           "row": 5,
           "col": 1,
-          "buttonColor": "orange"
+          "buttonColor": "purple"
         },
         {
-          "name": "Speaker Notes (Amped)",
-          "type": "spinbox",
-          "buttonColor": "orange"
-        },
-        {
-          "name": "Amp Notes",
+          "name": "Mid Cubes",
           "type": "spinbox",
           "buttonColor": "purple"
+        },
+        {
+          "name": "Low Cubes",
+          "type": "spinbox",
+          "buttonColor": "purple"
+        },
+        {
+          "name": "Top Cones",
+          "type": "spinbox",
+          "row": 5,
+          "col": 3,
+          "buttonColor": "darkOrange"
+        },
+        {
+          "name": "Mid Cones",
+          "type": "spinbox",
+          "col": 3,
+          "buttonColor": "darkOrange"
+        },
+        {
+          "name": "Low Cones",
+          "type": "spinbox",
+          "col": 3,
+          "buttonColor": "darkOrange"
         },
         {
           "type": "spacer",
@@ -132,26 +185,19 @@
           "name": "End Location",
           "type": "radio",
           "options": [
-            "Onstage",
+            "Engaged",
+            "Docked",
             "Parked",
             "None"
           ],
-          "default": 2
+          "default": 3
         },
         {
-          "name": "High Note Scored",
+          "name": "Failed Charging Station",
           "type": "checkbox"
         },
         {
-          "name": "Trap Note",
-          "type": "checkbox"
-        },
-        {
-          "name": "Robot Sharing Chain",
-          "type": "checkbox"
-        },
-        {
-          "name": "Robots Onstage",
+          "name": "Robots On Charge Station",
           "type": "spinbox",
           "max": 3
         },
