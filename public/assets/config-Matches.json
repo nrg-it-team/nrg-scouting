@@ -87,14 +87,14 @@
           "align": "center"
         },
         {
-          "name": "Speaker Notes (Unamped)",
+          "name": "Speaker Notes (Unamplified)",
           "type": "spinbox",
           "row": 5,
           "col": 1,
           "buttonColor": "orange"
         },
         {
-          "name": "Speaker Notes (Amped)",
+          "name": "Speaker Notes (Amplified)",
           "type": "spinbox",
           "buttonColor": "orange"
         },
